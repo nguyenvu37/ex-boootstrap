@@ -1,0 +1,26 @@
+// Main page Heading
+
+include ../partials/mixin
+.container
+    .row
+        .col-12.text-center.mt-5
+            h1.display-4.pt-4 Complete Website
+            .border-top.border-dark.w-50.mx-auto.my-3
+            p.lead Built with HTML, CSS &amp; Bootstrap
+
+    // Three Column Section
+    .row.justify-content-center.my-5.text-center
+        +stack('fa-html5', 'HTML5', 'color: #dd4d26')
+        +stack('fa-bootstrap', 'BOOTSTRAP', 'color: #563d7c')
+        +stack('fa-css3-alt', 'CSS3', 'color: #026db6')
+
+// Border top
+.border-top.border-dark.w-100.mx-auto.my-3
+
+// Two Column Section
++two-column('The 12 Website Bundle Pack', '../../../assets/img/tablet.png')
+
+// Border top
+.border-top.border-dark.w-100.mx-auto
+
+

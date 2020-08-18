@@ -1,0 +1,11 @@
+#carousel.carousel.slide(data-ride="carousel" data-interval="5000")
+    // Carousel Content
+    .carousel-inner
+        +carousel-item('active', '../../../assets/img/carousel/1.jpg',"", 'justify-content-end',"bg-dark text-right text-white","btn-primary","ml-auto border-white")
+        +carousel-item('', '../../../assets/img/carousel/2.jpg',"d-none","","bg-light text-left text-dark", "btn-light", "mr-auto border-dark")
+        +carousel-item('', '../../../assets/img/carousel/3.jpg',"","","bg-light text-left text-dark", "btn-light", "mr-auto border-dark")
+
+    // Carousel Indicators
+    ol.carousel-indicators
+        each item in listSlideNum
+            li(data-target="#carousel" data-slide-to=item.num class=item.className)

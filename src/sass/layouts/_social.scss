@@ -1,0 +1,31 @@
+@import '../base/placehoders';
+@import '../base/mixin';
+
+.jumbotron {
+    @extend %bg;
+    padding: 1rem .5rem;
+    margin-bottom: 0;
+    border-radius: 0;
+    @include boxShadow(0 .5rem .5rem #0000001a);
+
+    ul.social {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0 auto;
+
+        li {
+            margin: 0 auto;
+
+            .svg-inline--fa {
+                font-size: 2rem;
+                margin: 0 1rem;
+
+                &:hover {
+                    color: gray !important;
+                }
+            }
+        }
+    }
+}
+

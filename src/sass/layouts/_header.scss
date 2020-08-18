@@ -1,0 +1,15 @@
+@import '../base/placehoders';
+@import '../base/mixin';
+
+.navbar {
+    @extend %bg;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    @include boxShadow(0 .5rem .5rem #0000001a);
+
+    .navbar-brand {
+        img {
+            height: 2.8rem;
+        }
+    }
+}

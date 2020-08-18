@@ -1,0 +1,49 @@
+@import '../base/placehoders';
+
+.carousel-inner {
+    max-height: 900px;
+    .carousel-item.active {
+        @extend %carousel-item;
+    }
+    .carousel-item-prev,
+    .carousel-item-next {
+        @extend %carousel-item;
+    }
+    .carousel-item {
+        position: relative;
+        
+        .carousel-caption {
+            position: absolute;
+            top: 47%;
+            transform: translateY(-50%);
+
+            h3 {
+                font-style: 2.3rem !important;
+                font-weight: 300;
+            }
+
+            p.lead {
+                font-size: 1.4rem !important;
+            }
+
+            .bg-dark {
+                background-color: #000000b3 !important;
+                border-radius: 1.5rem ;
+                padding: 1.2rem ;
+            }
+            .bg-light {
+                background-color: #f8f9fa94!important;
+                border-radius: 1.5rem ;
+                padding: 1.2rem;
+            }
+        }
+    }
+}
+
+.carousel-indicators {
+    li {
+        width: 40px;
+        height: 6px;
+        margin: 0 4px;
+    }
+}

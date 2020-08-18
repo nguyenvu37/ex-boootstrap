@@ -1,0 +1,55 @@
+mixin carousel-item(className, img, classCap, justify, classCaption, btn, margin)
+    .carousel-item(class=className)
+        img.w-100(src=img alt="")
+        .carousel-caption(class=classCap)
+            .container
+                .row(class=justify)
+                    .d-none.d-md-block.col-md-9.col-lg-7(class=classCaption)
+                        h3.pb-3 Responsive Website Design
+                        .border-top.mb-3.w-75(class=margin)
+                        p.lead Built with HTML5, CSS3, the Easy-to-Use 12 column Responsive Bootstrap CSS grid! 
+                        a.btn.btn-md(class=btn) Learn more...
+
+mixin two-column(title, img)
+    .container.mt-5
+        .row.py-4
+            .col-lg-5.mb-4.my-lg-auto
+                h1.font-weight-bold.mb-3 #{title}
+                p.mb-4 Built with HTML5, CSS3 and the simple-use 12 colunm responsive CSS grid layout. Built with HTML5, CSS3 and the simple-use 12 colunm responsive CSS grid layout!
+                a.btn.btn-outline-info.btn-lg(href="#") See the Bundle
+            .col-lg-7
+                img.w-100(src=img, alt="")
+
+mixin stack(className, param, color)
+    .col-md-6.col-lg-4.py-3
+        span(class="fa-stack fa-4x")
+            i(class="fas fa-square fa-stack-2x")
+            i.fab.fa-stack-1x.fa-inverse(class=className style=color)
+        p.lead #{param}, the best for learning to code website
+        a.btn.btn-outline-dark.btn-md(href="#") Learn more...
+
+mixin web-design(title, img)
+    .col-md-6.col-lg-4.my-4
+        h4.my-3 #{title}
+        img.w-100(src=img, alt="")
+        p Built with the simple-to-use 12 column responsive CSS grid layout!
+        a.btn.btn-outline-dark.btn-md(href="#") See the design...
+
+mixin sticky(className, h4,btn)
+    .jumbotron(class=className)
+        .container
+            .row.justify-content-center.text-center
+                .d-none.d-md-block.col-md-8.col-xl-7.my-auto
+                    h4 #{h4}
+
+                .col-md-4col-xl-3.pt-1.pt-md-2.pb-2
+                    a.btn.btn-primary.btn-md(href="#") #{btn}
+
+mixin footer(h5, list) 
+    .col-md-4.mb-3
+        hr.bg-light
+        h5 #{h5}
+        hr.bg-light
+        each item in list
+            p
+                a(href="#" style="text-decoration: none; color: #fff;") #{item}

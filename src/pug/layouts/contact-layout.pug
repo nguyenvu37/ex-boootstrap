@@ -1,0 +1,42 @@
+// form Bootstrap
+
+.container
+    .row
+        .col-12.text-center.mt-5
+            h1.display-4.pt-4 Contact
+            .border-top.border-dark.w-50.mx-auto.my-3
+            p.lead Built with HTML, CSS &amp; Bootstrap
+    .row.my-5
+        .col-md-8.my-3.mx-auto.border.px-3.py-4
+            form
+                .form-row
+                    .form-group.col-md-6
+                        label(for="inputEmail4") Email
+                        input.form-control#inputEmail4(type="email")
+                    .form-group.col-md-6
+                        label(for="inputPassword4") Password
+                        input.form-control#inputPassword4(type="password")
+                .form-group
+                    label(for="inputAddress") Address
+                    input.form-control#inputAddress(type="text" placeholder="1234 Main St")
+                .form-group
+                    label(for="inputAddress2") Address 2
+                    input.form-control#inputAddress2(type="text" placeholder="Apartment, studio, or floor")
+                .form-row
+                    .form-group.col-md-6
+                        label(for="inputCity") City
+                        input.form-control#inputCity(type="text")
+                    .form-group.col-md-4
+                        label(for="inputState") State
+                        select.form-control#inputState
+                            option(selected) Choose...
+                            option ...
+                    .form-group.col-md-2
+                        label(for="inputZip") Zip
+                        input.form-control#inputZip(type="text")
+                .form-group
+                    .form-check
+                        input.form-check-input#gridCheck(type="checkbox")
+                        label.form-check-label(for="gridCheck")
+                            | Check me out
+                button.btn.btn-primary.btn-md.text-center.col-12(type="submit") Send...

@@ -1,0 +1,15 @@
+// Navigation
+include ../partials/variables
+
+nav.navbar.bg-light.navbar-light.navbar-expand-lg.sticky-top.text-uppercase
+    .container
+        a.navbar-brand(href="index.html")
+            img(src="../../../assets/img/logo.png" alt="Logo" title="Logo")
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive")
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarResponsive
+            ul.navbar-nav.ml-auto
+                each item in listNav
+                    li.nav-item
+                        a.nav-link(href=item.id class=item.className) #{item.title}
+// End Navigation

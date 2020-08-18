@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Bootstrap Exercise
+
+        // Favicon
+        link(href="assets/img/favicon.png" rel="icon")
+
+        // Google Fonts
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet")
+
+        // Bootstrap CSS Files
+        link(href="assets/css/bootstrap.min.css" rel="stylesheet")
+
+        // CSS File
+        link(href="css/style.css" rel="stylesheet")
+    body
+        // Start Header
+        block header
+            include ../partials/header
+        // End Header
+        // Start Main
+        block main
+        // End Main
+        // Start Footer
+        block footer
+            include ../partials/footer
+        // End Footer
+
+        // jQuery
+        script(src="js/jquery-3.4.1.min.js")
+        // Bootstrap JS
+        script(src="js/bootstrap.min.js")
+        // Popper JS
+        script(src="js/popper.min.js")
+        // Font Awesome
+        script(src="js/all.min.js")
+
+        // End Script Source Files
